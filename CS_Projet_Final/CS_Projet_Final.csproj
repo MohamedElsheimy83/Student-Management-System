@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E23F4B68-678F-41D7-8E15-E0A4992011CA}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CS_Projet_Final</RootNamespace>
+    <AssemblyName>CS_Projet_Final</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AjouterProgramme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AjouterProgramme.Designer.cs">
+      <DependentUpon>AjouterProgramme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter_etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter_etudiant.Designer.cs">
+      <DependentUpon>Ajouter_etudiant.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Authentification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Authentification.Designer.cs">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Etudiant.cs" />
+    <Compile Include="GlobalVariables.cs" />
+    <Compile Include="ListerProgrammes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListerProgrammes.Designer.cs">
+      <DependentUpon>ListerProgrammes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lister_etudiants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lister_etudiants.Designer.cs">
+      <DependentUpon>Lister_etudiants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lister_tous_etudiants.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lister_tous_etudiants.Designer.cs">
+      <DependentUpon>Lister_tous_etudiants.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Programme.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Suppression_programme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suppression_programme.Designer.cs">
+      <DependentUpon>Suppression_programme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Supprimer_etudiant.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Supprimer_etudiant.Designer.cs">
+      <DependentUpon>Supprimer_etudiant.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AjouterProgramme.resx">
+      <DependentUpon>AjouterProgramme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter_etudiant.resx">
+      <DependentUpon>Ajouter_etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Authentification.resx">
+      <DependentUpon>Authentification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListerProgrammes.resx">
+      <DependentUpon>ListerProgrammes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lister_etudiants.resx">
+      <DependentUpon>Lister_etudiants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lister_tous_etudiants.resx">
+      <DependentUpon>Lister_tous_etudiants.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Suppression_programme.resx">
+      <DependentUpon>Suppression_programme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Supprimer_etudiant.resx">
+      <DependentUpon>Supprimer_etudiant.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\suppressionEtudiant.png" />
+    <None Include="Images\SuppressionProgramme.png" />
+    <None Include="Images\programme.png" />
+    <None Include="Images\ajouterEtudiant.png" />
+    <None Include="Images\listerEtudiant.png" />
+    <Content Include="Images\Rosemont.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
