@@ -1,4 +1,4 @@
-# Student-Management-System-C-Windows-forms
+# Student-Management-System
 Students Management System- C#(Windows Forms) Project
 
 ## Context:  
